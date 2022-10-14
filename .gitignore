@@ -1,7 +1,7 @@
 ## ignoring by default
 .DS_Store
 .ipynb_checkpoints/
-*.csv
+#*.csv
 *.pdf
 *.png
 *.jpeg
@@ -56,7 +56,7 @@ __pycache__/
 *.pdf
 
 .DS_Store
-*.csv
+#*.csv
 *.pdf
 *.png
 *.jpeg
