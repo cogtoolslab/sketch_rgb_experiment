@@ -127,9 +127,8 @@ def get_filepaths(data_root, data_path, multilevel=True, aws_path_out=False):
 
 def upload_stim_to_s3(bucket,
                       pth_to_s3_credentials,
-                      data_root,
-                      data_path,
-                      multilevel=True,
+                      filepaths, 
+                      s3_keep_path_block,
                       overwrite=False):
     """
     Upload stimuli dataset to AWS S3
@@ -151,11 +150,10 @@ def upload_stim_to_s3(bucket,
     """
     client = get_s3_client(pth_to_s3_credentials)
     b = create_bucket(client, bucket)
-    filepaths = get_filepaths(data_root, data_path, multilevel=multilevel)
     # print("Got {} filepaths".format(len(filepaths)))
     for fp in tqdm(filepaths):
         if "." in fp:
-            s3_path = fp.split(data_root)[1]
+            s3_path = "/".join(fp.split("/")[-s3_keep_path_block:])
             if s3_path[0] == '/': s3_path = s3_path[1::]
             upload(client, bucket, s3_path, fp, overwrite=overwrite)
             # print("Uploaded " + fp + " to s3 path: " + s3_path)
