@@ -1,0 +1,4 @@
+,class,photo_path,sketch_path,split,keypoint_x,keypoint_y,keypoint_idx
+0,pantheon,pantheon_photo.jpg,pantheon_sketch.jpg,fam,154.39900249376558,162.7356608478803,0
+8,moon,moon_photo.jpg,moon_sketch.jpg,fam,163.15151515151516,126.44949494949495,0
+16,bridge,bridge_photo.jpg,bridge_sketch.jpg,fam,107.070796460177,66.95575221238938,0
