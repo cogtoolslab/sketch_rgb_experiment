@@ -1,0 +1,6 @@
+,class,photo_path,sketch_path,split,keypoint_x,keypoint_y,keypoint_idx
+0,leaf,leaf_photo.jpg,leaf_sketch.jpg,catch,175.62424242424242,113.0,0
+8,sun,sun_photo.jpg,sun_sketch.jpg,catch,99.83516483516483,114.62087912087912,0
+16,opera,opera_photo.jpg,opera_sketch.jpg,catch,142.54330708661416,70.03149606299213,0
+24,eiffel,eiffel_photo.jpg,eiffel_sketch.jpg,catch,188.20197044334975,183.76354679802955,0
+32,sunflower,sunflower_photo.jpg,sunflower_sketch.jpg,catch,134.36708860759492,122.81012658227849,0
